@@ -15,6 +15,7 @@ public class Shop {
     static Map<Integer, Integer> products = new HashMap<>();
     static BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
     static Order order = new Order();
+    static Factory factory = new Factory();
 
     static {
         products.put(1, 10);
@@ -38,10 +39,6 @@ public class Shop {
         System.out.println("1 - Card");
         System.out.println("2 - PayPal");
         int number = Integer.parseInt(bf.readLine());
-        if (number == 1) {
-            order.createOrder(new Card());
-        } else if (number == 2) {
-            order.createOrder(new PayPal());
-        }
+        order.createOrder(factory.getMethod(number));
     }
 }

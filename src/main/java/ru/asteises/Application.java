@@ -9,7 +9,7 @@ public class Application {
 
         List<String> stringList = List.of("Adam", "Tom", "Adam", "Anna", "Bill", "Anna", "Tom");
         List<Integer> integerList = List.of(22, 54, 11, 90, 8, 12, 85);
-        String s = " new ";
+        String string = " new ";
 
 //        List<String> stringListB = stringList.stream().filter(x -> x.charAt(0) == 'B').toList();
 //        long i = stringList.stream().filter(x -> x.length() == 3).count();
@@ -35,10 +35,15 @@ public class Application {
 //        map.put("Test", i);
 
         Set<String> testSet = new HashSet<>();
-        List<String> test = List.of("qwe", "asd", "qwe", "asd", "zxc");
+        List<String> test = List.of("qwe", "asd", "qwe+ert", "asd", "zxc", "123123");
         for (String listString : test) {
             testSet.add(listString);
         }
+
+
+
+
+
 
         TextTest textTest = new TextTest();
         textTest.count();
