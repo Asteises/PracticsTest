@@ -13,6 +13,8 @@ public class Application {
         List<String> strings = new ArrayList<>();
         String s = " new ";
         String s1 = " renew ";
+        List<String> strings1 = List.of("asda", "asdaaa", "adddaa");
+        strings1.stream().map(x -> x.toUpperCase()).forEach(x -> System.out.println(x));
 
         List<Integer> intList = List.of(4, 12, 8, 543, 123, 647, 2, 9, 10);
         int temp = 0;
