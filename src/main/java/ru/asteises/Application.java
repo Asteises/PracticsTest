@@ -13,6 +13,8 @@ public class Application {
         List<String> strings = new ArrayList<>();
         String s = " new ";
         String s1 = " renew ";
+        List<String> strings1 = List.of("asda", "asdaaa", "adddaa");
+        strings1.stream().map(x -> x.toUpperCase()).forEach(x -> System.out.println(x));
 
 //        List<String> stringListB = stringList.stream().filter(x -> x.charAt(0) == 'B').toList();
 //        long i = stringList.stream().filter(x -> x.length() == 3).count();
