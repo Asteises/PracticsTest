@@ -16,6 +16,15 @@ public class Application {
         List<String> strings1 = List.of("asda", "asdaaa", "adddaa");
         strings1.stream().map(x -> x.toUpperCase()).forEach(x -> System.out.println(x));
 
+        List<Integer> intList = List.of(4, 12, 8, 543, 123, 647, 2, 9, 10);
+        int temp = 0;
+        for(int i = 0; i < intList.size(); i++) {
+            if (integerList.get(i) > temp) {
+                temp = integerList.get(i);
+            }
+        }
+        System.out.println(temp);
+
 //        List<String> stringListB = stringList.stream().filter(x -> x.charAt(0) == 'B').toList();
 //        long i = stringList.stream().filter(x -> x.length() == 3).count();
 //        stringList.stream().sorted().forEach(x -> System.out.println(x));
